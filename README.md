@@ -1,6 +1,6 @@
 # crickkin.github.io
 
-##yowzah##
+## yowzah
 
 ```javascript
 console.log("testing");

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+    <head>
+        <title>Aula 5 - Formulário</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <h1>Aula 5 - Formulário</h1>
+        <form action="#">
+            <input id='country_name' name='country_name' type="text" list='country'/>
+            <datalist id="country">
+                <option value="Afghanistan">
+                <option value="Albania">
+                <option value="Algeria">
+                <option value="Andorra">
+                <option value="Angola">
+            </datalist>
+
+            <p><b>Você deseja ser um webmaster?</b></p>
+            <input type="radio" name="teste" value="lala">Sim<br>
+            <input type="radio" name="teste">Não<br>
+            <input type="radio" name="teste">Talvez<br>
+            <input type="radio" name="teste">Quem sabe<br>
+
+            <p><b>O que você deseja aprender?</b></p>
+            <input type="checkbox" name="check" value="html">HTML<br>
+            <input type="checkbox" name="check" value="css">CSS<br>
+            <input type="checkbox" name="check" value="js">Javascript<br>
+            <input type="checkbox" name="check" value="php">PHP<br>
+
+            <br>
+
+            <!--FieldSet para agrupar tipos de form-->
+            <fieldset>
+                <legend>Login:</legend>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome">
+                <label for="email">E-mail:</label>
+                <input type="text" id="email">
+            </fieldset>
+
+            <br>
+            <!--Select-->
+            <select name="PayDay" size='3' multiple='multiple'>
+                <optgroup label="grupo 1">
+                    <option value="1">1</option>
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                </optgroup>
+                <optgroup label="grupo 2">
+                    <option value="25">25</option>
+                    <option value="30" selected>30</option>
+                    <option value="40">40</option>
+                </optgroup>
+            </select>
+
+            <br><br>
+            <textarea name="txtarea" id="txtarea" cols="30" rows="10" maxlength="500">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra porta egestas. Vestibulum ante ipsum primis
+                in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus vitae elit in erat sollicitudin pharetra at blandit
+                diam. Vivamus commodo erat quis quam rhoncus venenatis. Etiam nec tortor ut nunc sodales sollicitudin. Vivamus aliquet
+                odio vel magna pretium, eu ullamcorper sapien porttitor. Curabitur odio ex, pulvinar in finibus et, accumsan aliquam
+                elit. Maecenas ut malesuada velit, quis iaculis massa. Fusce sollicitudin sollicitudin nisl vel viverra. Maecenas ac
+                gravida justo. Aenean suscipit tristique tellus. Integer rhoncus purus at turpis mollis, id vestibulum felis finibus.
+                Nullam dictum lectus risus, sit amet facilisis metus ullamcorper quis. Suspendisse vel lacus lectus. Morbi cursus velit
+                sem, ac bibendum turpis auctor a.
+                
+                Integer ultrices urna massa, sed tempor lacus efficitur sit amet. Praesent sed sagittis nisi. Nulla pellentesque varius
+                lorem, sit amet lacinia turpis placerat quis. Nulla pellentesque, diam eu iaculis vestibulum, augue arcu tempor ligula,
+                id laoreet quam magna in quam. Quisque tristique odio eget risus suscipit tincidunt. Donec tincidunt ac leo vel sodales.
+                Morbi lobortis id sapien et tincidunt. Nulla pretium molestie malesuada. Curabitur id varius nisl. Aliquam sed magna ex.
+                
+                Aenean at magna lacinia, finibus nisi sit amet, euismod magna. Morbi eget ex orci. Integer iaculis posuere orci tempus
+                pulvinar. Phasellus metus leo, tempus vitae risus vel, sagittis placerat diam. Nunc euismod purus eget volutpat
+                condimentum. In egestas augue a tortor euismod, at efficitur dolor pulvinar. Nullam egestas vehicula ligula, eget semper
+                enim efficitur quis. Suspendisse varius ante nisi, eget tincidunt magna pretium tempor. In sed nisl sed diam sodales
+                lobortis. Pellentesque tempus, risus id lacinia finibus, ante ex volutpat nisl, eu imperdiet odio magna a velit.
+                
+                Etiam quam odio, iaculis fringilla turpis at, sagittis dictum magna. Vestibulum ante ipsum primis in faucibus orci
+                luctus et ultrices posuere cubilia Curae; Nulla mattis turpis nec eros suscipit tempor. Cras ultrices posuere ipsum
+                vitae pulvinar. Aenean pharetra mi eget nulla feugiat, eu lacinia eros mattis. Donec eget augue quam. Pellentesque
+                habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque nec sem lobortis arcu egestas
+                gravida. Phasellus id nibh at risus varius blandit. Aenean vel tincidunt sem. Nunc a velit bibendum, gravida erat eu,
+                ullamcorper magna.
+                
+                Aenean mollis placerat enim vitae egestas. Quisque ullamcorper urna eget velit sagittis, sed efficitur felis fringilla.
+                Phasellus rhoncus, lorem quis malesuada euismod, nisl nisl auctor enim, hendrerit pellentesque tortor dolor ac ex.
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed feugiat, libero a tristique
+                hendrerit, ipsum metus egestas nibh, et luctus orci erat eu ipsum. Mauris tempor posuere erat id pulvinar. Sed convallis
+                sem in magna tincidunt, sit amet blandit ex laoreet. Mauris dignissim massa ligula, ut laoreet nibh rhoncus vitae.
+                Vivamus non tempus quam. Nulla tincidunt metus vel diam pharetra imperdiet. Cras id pellentesque magna. Aliquam
+                efficitur vitae mauris a condimentum. Praesent gravida nisl sollicitudin laoreet consequat. Nam in varius dolor.
+            </textarea>
+
+            <br><br>
+
+            <input type="file" name="file" id="file">
+            <br><br>
+            <input type="text" name="lala" id="lial" pattern="(?=.*\d)(?=.*[a,z])(?=.*[A,Z]).{8,}">
+            <br>
+            <br>
+            <input type="submit" name="Enviar">
+            <input type="reset" name="Apagar Tudo">
+        </form>
+
+        <h2>Outros tipos de Input</h2>
+        <form action="#">
+            <input type="email" name="list" id="aasss"><br>
+            <input type="url" name="url" id="url"><br>
+            <input type="number" name="numero" id="numero"><br>
+            <input type="range" name="range" id="range"><br>
+            <input type="date" name="data" id="data"><br>
+            <input type="color" name="cor" id="cor"><br>
+            <input type="tel" name="tel" id="tel"><br>
+        </form>
+
+        <hr>
+        <a href="./exercicios/01.html">Exercício 1</a>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+h1{
+    background-color: #880044;
+    border-radius: 5px;
+    padding: 10px;
+    color: #ddd;
+}
+
+fieldset{
+    background-color: #000044;
+    border-width: 0ch;
+    border-radius: 5px;
+}
+fieldset legend{
+    background-color: #7777ff;
+    padding: 5px;
+    border-radius: 5px;
+    color: #ddd;
+}
+fieldset label{
+    color: #ddd;
+}
+
+input{
+    margin: 5px;
+    border-radius: 5px;
+}

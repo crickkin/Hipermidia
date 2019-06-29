@@ -1,11 +1,21 @@
+body {
+    display: grid;
+    grid-template-areas: 
+        "h1 h1 h1"
+        "nav sec sec"
+        "foo foo foo";
+}
+
 h1 {
     padding: 5px;
     margin: 0px;
+    grid-area: h1;
 }
 
 nav {
-    float: left;
+    /* float: left; */
     width: 200px;
+    grid-area: nav;
 }
 
 ul {
@@ -37,16 +47,18 @@ a:hover {
 }
 
 section {
-    float: left;
+    /* float: left; */
     width: 80%;
     border-left: 1px solid #111;
     padding: 1em;
+    grid-area: sec;
 }
 
 footer {
     padding-right: 5px;
     padding-left: 5px;
-    clear: left;
+    /* clear: left; */
+    grid-area: foo;
 }
 
 .grayBorder {

@@ -40,10 +40,13 @@ a {
     display: block;
     margin: 0.25px;
     padding: 14px;
+    border-radius: 2px;
+    transition: background-color 1s, transform 1s;
 }
 
 a:hover {
     background-color: #bb2255;
+    transform: rotate(360deg);
     color: #eee;
 }
 
@@ -58,6 +61,7 @@ section {
 section p {
     text-align: justify;
 }
+
 
 footer {
     padding-right: 5px;
@@ -74,4 +78,8 @@ footer p {
     background-color: #555;
     color: #eee;
     border-radius: 2px;
+}
+
+.upsidown {
+    transform: rotate(180deg);
 }

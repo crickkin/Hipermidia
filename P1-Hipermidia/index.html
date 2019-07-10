@@ -3,35 +3,36 @@
     <head>
         <title>Prova P1 - Hipermídia</title>
         <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
         <!-- Cabeçalho -->
         <header>
-            <ul>
-                <li>
+            <ul class="cabecalho">
+                <li id="logo">
                     <picture>
-                        <img src="./images/logo_1.png" alt="Logo"/>
+                        <img src="./images/logo_1.png" alt="Logo" id="logoImage"/>
                     </picture>
                 </li>
-                <li>
+                <li id="headerStructure">
                     <!-- Links de Navegação -->
                     <nav>
                         <ul>
-                            <li>
+                            <li id="home">
                                 <a href="#Home">Home</a>
                             </li>
-                            <li>
+                            <li id="gaeline">
                                 <a href="#Gaeline">Gaeline</a>
                             </li>
-                            <li>
+                            <li id="sistemap">
                                 <a href="#Sitemap">Sitemap</a>
                             </li>
-                            <li>
+                            <li id="contact">
                                 <a href="#Contact">Contact</a>
                             </li>
-                            <li>
-                                <p>Text:</p>
-                                <select name="textType">
+                            <li id="textOptions">
+                                <p id="textOpTitle">Text:</p>
+                                <select name="textType" id="txtOpSel">
                                     <option value="1">A</option>
                                     <option value="2">A</option>
                                     <option value="3">A</option>
@@ -40,28 +41,28 @@
                         </ul>
                     </nav>
                     <!-- Pesquisa -->
-                    <ul>
-                        <li>
+                    <ul class="search">
+                        <li id="findSchool">
                             <button>Find a School</button>
                         </li>
-                        <li>
-                            <input type="text" name="search" id="search" placeholder="Site Search">
-                            <label for="search"><a href="#advancedSearch">advanced search</a></label>
-                            <button>OK</button>
+                        <li id="searchButton">
+                            <input type="text" name="search" id="searchInput" placeholder="Site Search">
+                            <label for="search" id="searchLabel"><a href="#advancedSearch">advanced search</a></label>
+                            <button id="searchBtn">OK</button>
                         </li>
                     </ul>
                     <!-- Coluna de Abas -->
-                    <ul>
-                        <li>
+                    <ul class="abas">
+                        <li id="parents">
                             <a href="#Parents">Parents</a>
                         </li>
-                        <li>
+                        <li id="teachers">
                             <a href="#Teachers">Teachers</a>
                         </li>
-                        <li>
+                        <li id="schools">
                             <a href="#Schools">Schools & Colleges</a>
                         </li>
-                        <li>
+                        <li id="students">
                             <a href="#Students">Students</a>
                         </li>
                     </ul>
@@ -69,11 +70,11 @@
             </ul>
         </header>
         <!-- Aba Lateral Esquerda -->
-        <aside>
+        <aside id="left">
             <picture>
-                <img src="./images/banner.png" alt="banner title">
+                <img src="./images/banner.png" alt="banner title" id="bannerImage">
             </picture>
-            <ul>
+            <ul id="firstAsideList">
                 <li>
                     <a href="#Department">The Department</a>
                 </li>
@@ -94,35 +95,35 @@
                 </li>
             </ul>
             <h2>Most Popular</h2>
-            <ul>
+            <ul id="secondAsideList">
                 <li>
-                    <a href="#">School Holidays</a>
+                    <a href="#">> School Holidays</a>
                 </li>
                 <li>
-                    <a href="#">School Inspection Reports</a>
+                    <a href="#">> School Inspection Reports</a>
                 </li>
                 <li>
-                    <a href="#">National School Anual Census</a>
+                    <a href="#">> National School Anual Census</a>
                 </li>
                 <li>
-                    <a href="#">State Examinations Commission</a>
+                    <a href="#">> State Examinations Commission</a>
                 </li>
             </ul>
         </aside>
         <!-- Aba Lateral Direita -->
-        <aside>
+        <aside id="right">
             <figure>
-                <img src="./images/image.png" alt="image 1">
+                <img src="./images/image.png" alt="image 1" id="mainSpotlight">
                 <figcaption>
                     <h3>Main Spotlight title</h3>
                     <p>The main spotlight shows multiple items in rotation</p>
                 </figcaption>
             </figure>
-            <figure>
+            <figure class="spotlight">
                 <img src="./images/image.png" alt="image 2">
                 <h3>Title of first small spotlight</h3>
             </figure>
-            <figure>
+            <figure class="spotlight">
                 <img src="./images/image.png" alt="image 3">
                 <h3>Second minor spotlight title</h3>
             </figure>
@@ -133,23 +134,23 @@
             <div>
                 <ul>
                     <li>
-                        <ul>
-                            <li>
+                        <ul class="twoPartsGrid">
+                            <li class="firstGrid">
                                 <h2>What's New</h2>
                             </li>
-                            <li>
+                            <li class="secondGrid toTheRight">
                                 <a href="#">More News</a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <ul>
-                            <li>
+                        <ul class="twoPartsGrid">
+                            <li class="firstGrid">
                                 <picture>
-                                    <img src="./images/image.png" alt="image 4">
+                                    <img src="./images/image.png" alt="image 4" id="FirstPostImage">
                                 </picture>
                             </li>
-                            <li>
+                            <li class="secondGrid">
                                 <h3><a href="#">78 school inspection reports published</a></h3>
                                 <p>19 January 2012</p>
                                 <p>
@@ -163,27 +164,27 @@
                         </ul>
                     </li>
                     <li>
-                        <ul>
-                            <li>
+                        <ul class="twoPartsGrid">
+                            <li class="firstGrid date">
                                 <p>13 January 2012</p>
                             </li>
-                            <li>
+                            <li class="secondGrid">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </li>
                         </ul>
-                        <ul>
-                            <li>
+                        <ul class="twoPartsGrid">
+                            <li class="firstGrid date">
                                 <p>09 January 2012</p>
                             </li>
-                            <li>
+                            <li class="secondGrid">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </li>
                         </ul>
-                        <ul>
-                            <li>
+                        <ul class="twoPartsGrid">
+                            <li class="firstGrid date">
                                 <p>29 December 2011</p>
                             </li>
-                            <li>
+                            <li class="secondGrid">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </li>
                         </ul>
@@ -191,7 +192,7 @@
                 </ul>
             </div>
             <!-- Segundo Container -->
-            <div>
+            <div class="secondPost">
                 <h2>Newsticker</h2>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultricies lectus odio, convallis efficitur ipsum laoreet
@@ -201,21 +202,21 @@
             </div>
             <!-- Terceiro Container -->
             <div>
-                <ul>
-                    <li>
+                <ul class="twoPartsGrid">
+                    <li class="firstGrid">
                         <h2>Calendar</h2>
                     </li>
-                    <li>
+                    <li class="secondGrid toTheRight">
                         <a href="#">Events</a>
                     </li>
                 </ul>
                 <ul>
                     <li>
-                        <ul>
-                            <li>
+                        <ul class="twoPartsGrid">
+                            <li class="firstGrid date">
                                 <p>25 - 26 January 2012</p>
                             </li>
-                            <li>
+                            <li class="secondGrid">
                                 <p>
                                     <a href="#">TUI Congress, Limerick</a>
                                 </p>
@@ -223,21 +224,21 @@
                         </ul>
                     </li>
                     <li>
-                        <ul>
-                            <li>
+                        <ul class="twoPartsGrid">
+                            <li class="firstGrid date">
                                 <p>02 - 03 February 2012</p>
                             </li>
-                            <li>
+                            <li class="secondGrid">
                                 <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <ul>
-                            <li>
+                        <ul class="twoPartsGrid">
+                            <li class="firstGrid date">
                                 <p>14 - 16 March 2012</p>
                             </li>
-                            <li>
+                            <li class="secondGrid">
                                 <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
                             </li>
                         </ul>
@@ -247,19 +248,19 @@
         </section>
         <footer>
             <ul>
-                <li>
+                <li id="feedback">
                     <a href="#">Feedback</a>
                 </li>
-                <li>
+                <li id="useWeb">
                     <a href="#">Using this Website</a>
                 </li>
-                <li>
+                <li id="access">
                     <a href="#">Accessibility Statment</a>
                 </li>
-                <li>
+                <li id="govRef">
                     <a href="#">www.Gov.ie</a>
                 </li>
-                <li>
+                <li id="pageTop">
                     <a href="#">
                         <figure>
                             <img src="./images/image.png" alt="top">
@@ -267,7 +268,7 @@
                         </figure>
                     </a>
                 </li>
-                <li>
+                <li id="depart">
                     <p>Department of Education and Skills | An Roin Oideachals Agus Scileana</p>
                 </li>
             </ul>

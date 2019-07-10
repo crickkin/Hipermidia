@@ -1,0 +1,356 @@
+/* Diretamente no componente */
+body {
+    margin: 0px;
+    display: grid;
+    grid-template: 
+        "hd hd hd"
+        "asl sec asr"
+        "foo foo foo";
+}
+
+header {
+    grid-area: hd;
+    background-color: #ddddff;
+}
+
+aside #left {
+    grid-area: asl;
+}
+
+aside #right {
+    grid-area: asr;
+}
+
+section {
+    grid-area: sec;
+}
+
+footer {
+    grid-area: foo;
+    border-top: #333 solid 0.5px;
+    text-align: center;
+}
+
+footer ul {
+    display: grid;
+    grid-template-areas: "fdbk utweb accstat govref pagtop dped";
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 2px;
+}
+
+nav ul {
+    display: grid;
+    grid-template: 
+    "home gaeline sismap contact txtOp";
+}
+
+nav ul li {
+    text-align: center;
+    border-right: #333 solid 0.5px;
+}
+
+a {
+    color: #aa0055;
+}
+
+div {
+    background-color: #ccc;
+    border-radius: 5px;
+    margin: 10px 10px 20px 10px;
+}
+
+div ul {
+    padding: 2px;
+}
+
+
+h2 {
+    margin: 0px;
+}
+
+p {
+    margin: 2px;
+}
+
+/* Por Classe */
+.cabecalho {
+    display: grid;
+    grid-template: "logo heaStruct";
+    grid-column: 60px 1fr;
+}
+
+.search {
+    display: grid;
+    grid-template: "fndScl srcBtn";
+}
+
+.abas {
+    display: grid;
+    grid-template:  "par teach schl stud";
+}
+
+.secondPost {
+    padding: 8px;
+}
+
+.toTheRight {
+    text-align: right;
+}
+
+.abas li a {
+    text-decoration: none;
+    color: #333;
+    background-color: #ccc;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+.abas li a:hover {
+    background-color: #aa3377;
+    color: #eee;
+}
+
+.twoPartsGrid {
+    display: grid;
+    grid-template: "first second";
+    grid-template-columns: 1fr 1fr;
+}
+
+.firstGrid {
+    grid-area: first;
+    margin: 2px;
+}
+
+.secondGrid {
+    grid-area: second;
+    margin: 2px;
+}
+
+.date {
+    text-align: right;
+    font-style: italic;
+    padding-inline-end: 55px;
+}
+
+.secondGrid h3 {
+    text-align: left;
+    margin: 0px;
+}
+
+.secondGrid p {
+    text-align: justify;
+}
+
+.spotlight {
+    display: grid;
+    grid-template: "image title";
+    background-color: #22222255;
+    padding: 5px;
+    align-items: center;
+}
+
+.spotlight img {
+    max-width: 90px;
+    height: 90px;
+    grid-area: image;
+}
+
+.spotlight h3 {
+    grid-area: title;
+}
+
+/* Por Id */
+#logo {
+    grid-area: logo;
+    align-items: center;
+}
+
+#headerStructure {
+    grid-area: heaStruct;
+    display: grid;
+}
+
+#logoImage {
+    max-width: 282px;
+    height: 110px;
+}
+
+#bannerImage {
+    max-width: 282px;
+    height: 120px;
+}
+
+#home {
+    grid-area: home;
+}
+
+#gaeline {
+    grid-area: gaeline;
+}
+
+#sistemap {
+    grid-area: sismap;
+}
+
+#contact {
+    grid-area: contact;
+}
+
+#textOptions {
+    grid-area: txtOp;
+    display: grid;
+    grid-template: "txtOpTt txtOpSel";
+}
+
+#textOpTitle {
+    grid-area: txtOpTt;
+    margin: 2px;
+}
+
+#txtOpSel {
+    grid-area: txtOpSel;
+}
+
+#findSchool {
+    grid-area: fndScl;
+}
+
+#searchButton {
+    grid-area: srcBtn;
+    display: grid;
+    grid-template: 
+        "srcInput srcPress"
+        "srcLabel srcLabel";
+}
+
+#searchInput {
+    grid-area: srcInput;
+}
+
+#searchLabel {
+    grid-area: srcLabel;
+}
+
+#searchBtn {
+    grid-area: srcPress;
+}
+
+#parents {
+    grid-area: par;
+}
+
+#teachers {
+    grid-area: teach;
+}
+
+#schools {
+    grid-area: schl;
+}
+
+#students {
+    grid-area: stud;
+}
+
+#FirstPostImage {
+    min-width: 150px;
+    max-width: 350px;
+    min-height: 250px;
+    max-height: 450px;
+}
+
+#feedback {
+    grid-area: fdbk;
+}
+
+#useWeb {
+    grid-area: utweb;
+}
+
+#access {
+    grid-area: accstat;
+}
+
+#govRef {
+    grid-area: govref;
+}
+
+#pageTop {
+    grid-area: pagtop;
+}
+
+#pageTop figure {
+    text-align: center;
+}
+
+#pageTop figure img {
+    width: 15px;
+    height: 15px;
+}
+
+#depart {
+    grid-area: dped;
+}
+
+#left ul li {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#left ul#firstAsideList li a {
+    text-decoration: none;
+    border: #222 solid 1px;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+#left ul#firstAsideList li a:hover {
+    background-color: #222;
+    color: #eee;
+}
+
+#left h2 {
+    padding-inline-start: 40px;
+}
+
+#secondAsideList {
+    background-color: #999;
+    padding: 10px;
+    margin-left: 40px;
+    border: #111 solid 0.5px;
+}
+
+#secondAsideList li a {
+    text-decoration: none;
+    color: #111;
+}
+
+#secondAsideList li a:hover {
+    text-decoration: underline;
+    color: #aa0055;
+}
+
+#right figure {
+    position: relative;
+}
+
+#right figure figcaption {
+    position: absolute;
+    bottom: 30px;
+    left: 75px;
+    background-color: #eeeeee55;
+    padding: 5px;
+    color: #880044;
+}
+
+#right figure figcaption h3 {
+    margin: 0px;
+}
+
+#mainSpotlight {
+    max-width: 350px;
+    height: 350px;
+}

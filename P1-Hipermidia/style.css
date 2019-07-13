@@ -36,7 +36,6 @@ footer ul {
     grid-template-areas: "fdbk utweb accstat govref pagtop dped";
 }
 
-
 ul {
     list-style-type: none;
     margin: 2px;

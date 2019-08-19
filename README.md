@@ -14,6 +14,7 @@ tratar dos dados com facilidade.
     <head>
         <title></title>
         <meta charset='utf-8'>
+        <link rel='stylesheet' type='text/css' href='./styles.css' />
     </head>
     <body>
         <h1>P1</h1>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>P2 - Prova de Hipermídias</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="./code.js"></script>
+    </head>
+    <body>
+        <h1>P2 - Prova de Hipermídias</h1>
+        <form id="formulario">
+            <label for="nome">Nome: </label>
+            <input type="text" id="nome">
+            <label for="telefone">Telefone: </label>
+            <input type="number" id="telefone">
+            <label for="dataChegada">Data de Chegada:</label>
+            <input type="date" id="dataChegada">
+            <label for="dataSaida">Data Saída: </label>
+            <input type="date" id="dataSaida">
+            <p>Quantidade de Quartos</p>
+            <select id="qtdQuartos">
+                <option value="0">Escolha uma quantidade...</option>
+            </select>
+            <div id="opcoesDeQuartos">
+                <!-- Opções de tipos de quarto -->
+            </div>
+            <p>Crianças? <input type="checkbox" id="children"></p>
+            <div id="qtdCriancas">
+                <!-- Quantidade de Crianças -->
+            </div>
+            <button type="button" id="reservar">Reservar</button>
+            <!-- <input type="submit" id="reservar" value="Reservar"> -->
+        </form>
+        <div id="containerReserva">
+            <!-- Div onde será mostrado resultado final -->
+        </div>
+    </body>
+</html>
